@@ -28,7 +28,7 @@ async def generate_ddr(
     inspection_bytes = await inspection_file.read()
     thermal_bytes = await thermal_file.read()
 
-    # Extract text depending on file type
+    
     if inspection_file.content_type == "application/pdf":
         inspection_text = extract_text_from_pdf(inspection_bytes)
     else:
