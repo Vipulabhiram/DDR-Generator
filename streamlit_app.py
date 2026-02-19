@@ -93,6 +93,10 @@ if st.button("Generate DDR"):
 
                 st.divider()
 
+                st.header("❓ Missing / Unclear Information")
+                for item in ddr.get("missing_information", []):
+                    st.write(f"- {item}")
+
                
 
             else:
